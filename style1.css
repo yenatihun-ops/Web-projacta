@@ -1,0 +1,430 @@
+
+/* =============================
+   GLOBAL STYLES
+============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f8fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+
+#link a {
+    text-decoration: none;
+    color: white; /* Keeps them blue as per your design */
+}
+
+/* =============================
+   HEADER & NAVIGATION
+============================= */
+
+#headerid {
+    background: #0077b6;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+
+    
+    
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: white;
+    color: #0077b6;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+
+.home-home1 {
+    background: url('./images/maledoctor.jpg') center/cover no-repeat fixed;
+
+    padding: 200px 100px;
+    text-align: center;
+    color: white;
+    position: relative;
+    opacity: 7.4;
+}
+
+.h1 {
+    animation: slide-color 3s infinite, rotate-scale 5s infinite;
+    display: inline-block;
+}
+
+/* Slide + scale animation */
+@keyframes rotate-scale {
+    0% {
+        transform: translateX(50vw) scale(0.8);
+    }
+    50% {
+        transform: translateX(5vw) scale(1.2);
+    }
+    100% {
+        transform: translateX(10vw+) scale(1);
+    }
+}
+
+/* Color rotation animation */
+@keyframes slide-color {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: red; }
+}
+
+
+
+
+/* Color rotation animation */
+@keyframes slide-color {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: red; }
+} 
+
+/* ===== GALLERY SECTION ===== */
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== GALLERY SECTION ===== */
+.gallery {
+    padding: 60px 20px;
+    background-color: gray;
+}
+
+/* ===== SLIDER CONTAINER ===== */
+.gallery-grid {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 30px;
+    border-radius: 16px;
+}
+
+/* ===== SLIDE TRACK ===== */
+.slide-track {
+    display: flex;
+    gap: 30px;
+    width: calc(300px * 5);
+    animation: slide 3s linear infinite;
+}
+
+/* ===== IMAGES ===== */
+.slide-track img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== KEYFRAMES ===== */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5vw) scale(1.2);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.service-grid {
+    animation: slide-color 3s infinite, rotate-scale 10s infinite;
+    display: inline-block;
+}
+
+
+.home-content p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    background: #00b4d8;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #0096c7;
+}
+/* Footer */
+     footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3 {
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.emergency-number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* =============================
+   ABOUT SECTION
+============================= */
+
+.about {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: peru;
+    color: white;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* =============================
+   SERVICES GRID
+============================= */
+
+.services {
+    background: rgb(24, 56,56,0.7);
+    
+    padding: 100px 10%;
+color: #e8f6ff;
+
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 7fr));
+    grid-gap: 30px;
+}
+
+.service-card {
+    background: #e8f6ff;
+    padding: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #003049;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    background: #d0d2ff;
+    border-color: hsl(129, 100%, 39%);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+/* =============================
+   CLINIC HOURS
+============================= */
+
+.hours {
+    padding: 10px 10%;
+   
+    text-align: center;
+}
+
+.hours-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.hours-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* Appointment Form */
+#Appointment form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+#Appointment input,
+#Appointment select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: cadetblue;
+}
+
+#Appointment button {
+  background-color: #004c91;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Appointment button:hover {
+  background-color: #007bff;
+}
+
+/* Contact Section */
+#Contact {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(2, 50, 64, 0.57);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+#Contact strong {
+  color: blue;
+}
+
+
+
+
+
+/* Pharmacy Section */
+.pharmacy_home {
+  padding: 50px 20px;
+  background-color: rgb(0, 128, 107);
+}
+
+.pharmacy_home h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid; /* FIXED: you used flex + grid incorrectly */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* fixed comma error */
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.para1 {
+  color: white;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.contactus{
+    padding-left: 15%;
+    background-color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
